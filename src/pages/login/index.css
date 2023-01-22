@@ -1,0 +1,50 @@
+main {
+  background: url('/src/assets/img/bg-login-register.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  background-color: var(--color-transparent);
+  padding: 2.5rem 1rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  margin: 1.25rem auto;
+}
+
+form button {
+  width: 100%;
+}
+
+small {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+}
+
+a {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 500px) {
+  section {
+    margin-top: 5rem;
+    max-width: 31.625rem;
+    padding: 1rem;
+  }
+}

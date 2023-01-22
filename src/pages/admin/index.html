@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Admin Page | Kenzie Empresas</title>
+  </head>
+  <body>
+    <main class="root container">
+      <section>
+        <div>
+          <h2>Departamentos</h2>
+          <select class="input" name="companies" id="companies">
+            <option value="">Selecionar Empresa</option>
+          </select>
+          <button class="btn btn-brand createDepartment">+ Criar</button>
+        </div>
+        <ul class="departments list"></ul>
+      </section>
+      <section>
+        <div>
+          <h2>Usuários Cadastrados</h2>
+        </div>
+        <ul class="employees list"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

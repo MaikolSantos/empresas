@@ -1,0 +1,25 @@
+.input {
+  height: 3.25rem;
+  background-color: var(--color-white);
+  border: 0.063rem solid var(--color-grey);
+  outline: none;
+  padding: 0 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: var(--color-brand);
+}
+
+textarea {
+  resize: none;
+  width: 100% !important;
+  padding: 1rem !important;
+  min-height: 10rem;
+  font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,54 @@
+.headerPages {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: var(--color-white);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-pages {
+  display: none;
+}
+
+.logo {
+  width: 8.875rem;
+}
+
+.nav-pages.open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 500px) {
+  .headerPages {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .headerPages .btn {
+    margin-top: 0;
+  }
+
+  .headerPages > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-pages {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+}

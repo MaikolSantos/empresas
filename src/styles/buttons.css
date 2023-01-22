@@ -1,0 +1,111 @@
+.btn {
+  padding: 0 2rem;
+  height: 3rem;
+  background-color: transparent;
+  outline: none;
+  border: 0.063rem solid transparent;
+  font-weight: bold;
+  color: transparent;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 1.125rem;
+}
+
+.btn-brand {
+  background-color: var(--color-brand);
+  color: var(--color-white);
+}
+
+.btn-brand:hover {
+  background-color: var(--color-brand-hover);
+}
+
+.btn-sucess {
+  background-color: var(--color-sucess);
+  color: var(--color-white);
+}
+
+.btn-sucess:hover {
+  background-color: var(--color-sucess-hover);
+}
+
+.btn-alert {
+  color: var(--color-alert);
+  background-color: var(--color-white);
+  border-color: var(--color-alert);
+}
+
+.btn-alert:hover {
+  background-color: var(--color-grey);
+}
+
+.btn-outline {
+  color: var(--color-brand);
+  background-color: var(--color-white);
+  border-color: var(--color-brand);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-grey);
+}
+
+.btn-icon {
+  height: max-content;
+  width: max-content;
+  padding: 0 !important;
+}
+
+.btn-icon svg path {
+  transition: 0.2s ease;
+}
+
+.btn-icon:hover svg path {
+  fill: var(--color-brand);
+}
+
+.btn-menu {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.35rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-menu div {
+  width: 1.5rem;
+  height: 0.1rem;
+  border: none;
+  background-color: var(--color-black);
+  transition: .2s ease;
+}
+
+.btn-menu:hover div {
+  background-color: var(--color-brand);
+}
+
+.btn-menu.open div:first-child{
+  transform: rotate(135deg) translateY(-5px);
+}
+
+.btn-menu.open div:last-child{
+  transform: rotate(-135deg) translateY(5px);
+}
+
+.btn-menu.open div:nth-child(2) {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .btn {
+    padding: 0 2.813rem;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+}

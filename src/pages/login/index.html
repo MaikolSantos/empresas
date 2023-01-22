@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Login | Kenzie Empresas</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Login</h1>
+        <p>Preencha os campos para realizar login</p>
+        <form>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu e-mail"
+            required
+          />
+          <input
+            class="input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Sua senha"
+            required
+          />
+          <button class="btn btn-brand" type="submit">Login</button>
+        </form>
+        <small>ou</small>
+        <a class="btn btn-outline" href="/src/pages/register/">Cadastre-se</a>
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

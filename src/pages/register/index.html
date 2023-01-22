@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Register | Kenzie Empresas</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Cadastre-se</h1>
+        <form>
+          <input
+            class="input"
+            type="username"
+            name="username"
+            id="username"
+            placeholder="Seu nome"
+            required
+          />
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu e-mail"
+            required
+          />
+          <input
+            class="input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Sua senha"
+            required
+          />
+          <select class="input" name="professional_level" id="professional_level" required>
+            <option value="" disabled selected>Nível Pofissional</option>
+            <option value="estágio">Estágio</option>
+            <option value="júnior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="sênior">Sênior</option>
+          </select>
+          <button class="btn btn-brand" type="submit">Cadastre-se</button>
+        </form>
+        <a class="btn btn-outline" href="/src/pages/home/">Retornar</a>
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
